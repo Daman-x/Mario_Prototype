@@ -22,6 +22,7 @@ public class BoxHit : MonoBehaviour
     private void Start()
     {
         txt = GameObject.FindGameObjectWithTag("CoinAmount").GetComponent<Text>(); // point to gameplay ui coins amount
+        CoinsCount = 0;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
